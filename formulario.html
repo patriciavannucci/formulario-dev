@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width>, initial-scale=1.0">
+        <link rel="icon" href="Formulário/Favicon/icons8-dev-32.png">
+        <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <h1>Formulário do Desenvolvedor</h1>    
+    <form action="formulario.php" method="post" target="_blank" > 
+        <h3>Preencha o formulário</h3>
+        <div class="dados">          
+            <label for="name">Nome</label>
+            <input placeholder="Digite seu nome" type="text" id="name"/>
+        </div> 
+        <div class="dados">          
+            <label for="sobrenome">Sobrenome</label>
+            <input placeholder="Digite seu sobrenome" type="text" id="sobrenome"/>
+        </div> 
+        
+        <div class="dados">  
+            <label for= "email">E-mail: </label>
+            <input placeholder="Digite seu e-mail" type="email" id="email"/>
+        </div> 
+                                    
+            <p>Se você já atua na área de programação, em que você atua?  </p>
+                <label for="iarea"></label>
+                <select class="area" name="area" id="iarea">
+                    <option value="" selected>Selecione</option>                   
+                        <option value="option">Front-end</option>
+                        <option value="back">Back-end</option>
+                        <option value="full">Fullstack</option>
+                        <option value="decidindo">Estou decidindo</option>                   
+                </select>          
+                                
+            <p class="tecno">Selecione as Linguagens e Frameworks que você utiliza para trabalhar ou estudar?</p> 
+
+                <section class="personalizar-checkbox">
+                    <input type="checkbox"name= "html" id="ihtml">
+                    <label for="ihtml" class="checkbox-label">HTML</label>
+
+                    <input type="checkbox"name="react" id="ireact">
+                    <label for="ireact" class="checkbox-label">React</label>
+
+                    <input type="checkbox"name="css" id="icss">
+                    <label for="icss" class="checkbox-label">CSS</label>
+
+                    <input type="checkbox"name="javascript"id="ijavascript">
+                    <label for="ijavascript" class="checkbox-label">JavaScript</label>
+
+                    <div class="checkbox">
+                        <input type="checkbox"name="java" id="ijava">
+                        <label for="ijava" class="checkbox-label">Java</label>
+
+                        <input type="checkbox"name="C#" id="iC#">
+                        <label for="iC#" class="checkbox-label">C#</label>
+
+                        <input type="checkbox"name="php" id="iphp">
+                        <label for="iphp" class="checkbox-label">PHP</label>
+                    
+                        <input type="checkbox"name="pythonid"id= "ipython">
+                        <label for="ipython" class="checkbox-label">Python</label>
+                    </div>
+                </section>                     
+
+            <p class="comentar">Comente sua experiência na área ou sua expectativa:<br>
+                <textarea class="coment" name="comentario" id="icoment" cols="50" rows="10"></textarea>
+            </p>
+                     
+        <div class="botao">    
+            <input class="botoes" type="submit" name="b1" value="Enviar">
+            <input class="botoes" type="reset"  name="b2" value="Limpar">
+        </div>                        
+    </form>
+    
+</body>
+</html>
